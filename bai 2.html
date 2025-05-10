@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản lý danh sách sách</title>
+</head>
+<body>
+  <script>
+    let numbers = [];
+    for (let i = 0; i < 10; i++) {
+      let num = parseInt(prompt(`Nhập phần tử thứ ${i + 1}:`));
+      numbers.push(num);
+    }
+    
+    let max = Math.max(...numbers);
+    let index = numbers.indexOf(max);
+    console.log(`Phần tử lớn nhất là ${max} ở vị trí ${index}.`);
+  </script>
+</body>
+</html>
