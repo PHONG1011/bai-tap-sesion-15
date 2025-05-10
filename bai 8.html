@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản lý danh sách sách</title>
+</head>
+<body>
+  <script>
+    let a = [];
+    let b = [];
+    for (let i = 0; i < 10; i++) {
+      let numA = parseInt(prompt(`Nhập phần tử thứ ${i + 1} của mảng a:`));
+      a.push(numA);
+    }
+    for (let i = 0; i < 10; i++) {
+      let numB = parseInt(prompt(`Nhập phần tử thứ ${i + 1} của mảng b:`));
+      b.push(numB);
+    }
+    
+    let c = [...a, ...b];
+    console.log(`Mảng c sau khi nối: ${c.join(", ")}`);
+
+  </script>
+</body>
+</html>
