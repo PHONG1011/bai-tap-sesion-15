@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản lý danh sách sách</title>
+</head>
+<body>
+  <script>
+    let arr = ['c', 's', 'c', '2', '6', '1'];
+    let countNumbers = arr.filter(char => !isNaN(char) && char.trim() !== "").length; // Lọc các ký tự là số
+    console.log(`Số ký tự số trong mảng: ${countNumbers}`);
+
+  </script>
+</body>
+</html>
